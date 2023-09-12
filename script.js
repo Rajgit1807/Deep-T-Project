@@ -1,16 +1,23 @@
-var originalContent; // Variable to store the original content
+// Wait for the DOM to be fully loaded
 
-function changeContent() {
-    var iconDiv = document.querySelector('.left-sidebar2-icon');
-    originalContent = iconDiv.innerHTML; // Store the original content
-    iconDiv.innerHTML = '<ul>' +
-                        '<li>Item 1</li>' +
-                        '<li>Item 2</li>' +
-                        '<li>Item 3</li>' +
-                        '</ul>';
-}
+    // Fetch the JSON data
+    fetch("./data.json")
+        .then(response => response.json())
+        .then(data => {
+            // Access the data and render it in separate HTML tags
+            const titlehName = document.querySelector(".text1");
+            const liName = document.querySelector(".lititle");
+            const exploreText = document.querySelector(".text");
+            const headerText = document.querySelector(".heading-text");
+            const box1Text = document.querySelector(".box1-text");
 
-function resetContent() {
-    var iconDiv = document.querySelector('.left-sidebar2-icon');
-    iconDiv.innerHTML = originalContent; // Revert to the original content
-}
+            titlehName.textContent = `${data.tasks[0].task_title}`;
+            liName.textContent =`${data.tasks[0].task_title}`;
+            exploreText.textContent = `${data.tasks[0].task_description}`;
+            headerText.textContent = `${data.tasks[0].assets[0].asset_title}`;
+            box1Text.textContent = `${data.tasks[0].assets[0].asset_title}`;
+        
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+        });
