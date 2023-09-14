@@ -13,7 +13,7 @@
             titlehName.textContent = `${data.tasks[0].task_title}`;
             liName.textContent =`${data.tasks[0].task_title}`;
             exploreText.textContent = `${data.tasks[0].task_description}`;
-            headerText.textContent = `${data.tasks[0].assets[0].asset_title}`;
+            headerText.textContent = `${data.title}`;
             
             
             var i = 0;
