@@ -335,11 +335,16 @@ body {
 }
 
 .box1-info {
+    display: flex;
     font-size: 15.4px;
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
-    padding: 23px 16px;
+    padding: 12px 16px;
+}
+.box1-info strong{
+    padding-top: 15px;
+    padding-right: 7px;
 }
 
 .box1-img {
@@ -385,12 +390,17 @@ body {
 }
 
 .box2-info {
+    display: flex;
     font-size: 15.4px;
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
-    padding: 23px 16px;
+    padding: 12px 16px;
     box-shadow: 0px 1px 1px 0px #00000040;
+}
+.box2-info strong{
+    padding-top: 15px;
+    padding-right: 7px;
 }
 
 .box2-thread {
@@ -674,13 +684,18 @@ body {
 }
 
 .box3-info {
+    display: flex;
     font-size: 15.4px;
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
-    padding: 23px 16px;
+    padding: 12px 16px;
     width: 488px;
 
+}
+.box3-info strong{
+    padding-top: 15px;
+    padding-right: 7px;
 }
 
 .box3-contents {
@@ -816,19 +831,24 @@ body {
 }
 
 .box4-info {
+    display: flex;
     font-size: 15.4px;
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
-    margin-top: 28px;
-    padding: 23px 16px;
+    padding: 12px 16px;
     width: 489px;
+}
+.box4-info strong{
+    padding-top: 15px;
+    padding-right: 7px;
 }
 
 .box4-othercontents {
     height: 444px;
     border: 1px solid #D1CECE;
-    border-radius: 0px 0px 15px 15px
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 18px;
 }
 
 .box4-introcont {
@@ -863,7 +883,7 @@ body {
     margin: 18px 0 0 40px;
 }
 
-.box4-seemore {
+.box4-seemore,.box4-seemore2 {
     color: #606161;
     font-size: 14px;
     font-weight: 600;
@@ -871,6 +891,10 @@ body {
     letter-spacing: 0.02em;
     text-align: right;
     margin: 35px 29px 0 0;
+}
+.box4-seemore a,.box4-seemore2 a{
+    text-decoration: none;
+    color: grey;
 }
 
 .box4-ThreadA {
